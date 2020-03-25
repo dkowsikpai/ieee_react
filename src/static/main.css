@@ -1,0 +1,165 @@
+/*@media screen and (min-width: 600px) {*/
+/*    .particleDisplay{*/
+/*    width: 300px;*/
+/*    height: 500px;*/
+/*    top: -100px;*/
+/*    background: rgba(235,235,235,0.38);*/
+/*    transform: rotate(-64.15deg);*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 600px) {*/
+/*    .particleDisplay{*/
+/*       display: none*/
+/*    }*/
+/*}*/
+
+body{
+    overflow-x: hidden;
+}
+
+hr.style-one {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.morePeopleBtn {
+    background-color: #ffffff;
+    border: indigo solid 2px;
+    border-radius: 25px;
+    color: #290047;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+.morePeopleBtn:hover{
+    color: #EEEEEE;
+    background-color: indigo;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('./fonts/sansforgetica.otf');
+}
+
+.IEEESans {
+    color: #EEEEEE;
+    font-family: myFirstFont;
+}
+
+.counterDiv{
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .custMenu {
+        text-align: center;
+        color: #1f1f1f;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    .custMenu:after {
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        width: 0; /* Change this to whatever width you want to have before hover. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 5px solid #FE4365; /* This creates the border. Replace black with whatever color you want. */
+        transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+    }
+
+    .custMenu:hover:after {
+        width: 100%;
+    }
+
+    .aboutText{
+        line-height: 1.5;
+        text-align: right;
+        margin: 50px;
+    }
+
+    .aboutIllustration {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+    }
+    .logoIllustration{
+        z-index: -1;
+    }
+    .counterDiv{
+        margin: 30vh 0 2vh 1vw ;
+    }
+    .peopleIllustration{
+        position: absolute;
+        float: right;
+        margin-left: 40%;
+        /*margin-top: -25vh;*/
+        margin-bottom: 2vh;
+        height: 80%;
+        width: 80%;
+        z-index: -1;
+    }
+    .person{
+        text-align: center;
+        margin-left: 10vw;
+    }
+    .morePeopleBtn {
+        position: absolute;
+        margin-left: 25vw;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .custMenu{
+       display: none
+    }
+    .logoIllustration{
+        z-index: -1;
+    }
+    .aboutIllustration {
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        margin-top: -16vh;
+        z-index: -1;
+    }
+    .aboutText{
+        text-align: center;
+        line-height: 1.5;
+        margin-top: -16vh;
+    }
+    .counterDiv{
+        margin: 30vh 0 2vh 0 ;
+    }
+    .peopleIllustration{
+        position: absolute;
+        float: right;
+        margin-left: 40vw;
+        height: 50%;
+        width: 80%;
+        margin-bottom: 2vh;
+        margin-top: -20vh;
+        z-index: -1;    }
+    .person{
+        text-align: center;
+        margin-left: auto;
+    }
+    .pl{
+        margin-left: 10vw;
+    }
+    .pr{
+        margin-left: 20vw;
+    }
+    .morePeopleBtn {
+        position: absolute;
+        margin-left: 25vw;
+        margin-top: 20px;
+    }
+    .mobViewExecome{
+        margin-left: auto;
+    }
+}
