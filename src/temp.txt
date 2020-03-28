@@ -53,3 +53,133 @@
                     <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='act'>Activities</div>
                     <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='award'>Awards</div>
                 </div>
+
+
+
+
+
+/* Awards CSS */
+.awardSection {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
+}
+
+/*  COLUMN SETUP  */
+.awardCol {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.awardCol:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.awardGroup:before,
+.awardGroup:after { content:""; display:table; }
+.awardGroup:after { clear:both;}
+.awardGroup { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+    margin : 10em auto;
+}
+awardImg.img{
+    max-width: 570px;
+}
+.pure-g {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .pure-g {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .pure-g {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .pure-g {
+        width: 1170px;
+    }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .awardCol {
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+@media only screen and (max-width: 480px){
+    .awardflexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_1 {
+        order: 2;
+    }
+
+    awardImg.img{
+        max-width: 95%;
+    }
+    .pure-g{
+        overflow: hidden;
+    }
+}
+
+
+            <div className="pure-g">
+                <div className="awardSection awardGroup">
+                    <div className="awardCol span_1_of_2" style={{textAlign : 'center' , marginTop : '2vh'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div className="awardCol span_1_of_2">
+                        <img className="awardImg" src={winnerImg} alt=""/>
+                    </div>
+                </div>
+
+                <div className="awardSection awardGroup awardflexbox">
+                    <div className="awardCol span_1_of_2 item_1">
+                        <img className="awardImg" src={giftImg} alt=""/>
+                    </div>
+                    <div className="awardCol span_1_of_2 item_2" style={{textAlign : 'center',marginTop : '5em'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad qui consectetur numquam totam sint, nihil ex alias maxime fugiat distinctio in! Eligendi ducimus saepe libero dicta facilis dolor veniam distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis quod quas itaque doloremque autem commodi delectus nulla quasi atque consequuntur dolor alias earum odit tempore porro, minus cum quibusdam.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="awardSection awardGroup">
+                    <div className="awardCol span_1_of_2" style={{textAlign : 'center',marginTop : '5em'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque inventore repudiandae numquam error beatae excepturi rerum, similique adipisci ipsa saepe ea obcaecati laudantium, eveniet minus itaque deserunt natus omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi tempore iure quisquam ducimus recusandae, alias distinctio quae nemo ipsa blanditiis facilis velit mollitia dolores voluptatem qui necessitatibus repellat. Totam?
+                        </p>
+                    </div>
+                    <div className="awardCol span_1_of_2">
+                        <img className="awardImg" src={finishlineImg} alt=""/>
+                    </div>
+                </div>
+            </div>
