@@ -1,35 +1,28 @@
 import peopleImg from '../static/images/people.svg';
-import defaultManImg from '../static/images/defaultM.jpg';
 import React from "react";
+import ReactDOM from "react-dom";
+import SeemoreMembers from './SeemoreMembers';
 
-class Execom extends React.Component{
+
+class Execom extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        ReactDOM.render(<SeemoreMembers />, document.getElementById("root"));
+    }
+
     render() {
         return (
-            <div className="container-fluid" style={{marginTop: "10vh"}}>
-                <h1 className="person" style={{marginBottom: "30px", fontFamily: `'Montserrat', sans-serif`, fontWeight: "300",  letterSpacing: "5px"}}>Execom Members</h1>
-                <img src={peopleImg} alt="people"  align="right" className="peopleIllustration"/>
-                <div className="row mobViewExecome">
-                    <div className="person top pl">
-                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{borderRadius: "100%", marginLeft: "30px"}}/>
-                        <h5 style={{fontFamily: `'Montserrat', sans-serif`, marginTop: "5px"}}>Kowsik Nandagopan</h5>
-                    </div>
-                    <div className="person pr">
-                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{borderRadius: "100%"}}/>
-                        <h5 style={{fontFamily: `'Montserrat', sans-serif`, marginTop: "5px"}}>Navaneeth D</h5>
-                    </div>
-                </div>
-                <div className="row mobViewExecome">
-                    <div className="person pl">
-                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{borderRadius: "100%", marginLeft: "30px"}}/>
-                        <h5 style={{fontFamily: `'Montserrat', sans-serif`, marginTop: "5px"}}>Ganesh</h5>
-                    </div>
-                    <div className="person pr">
-                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{borderRadius: "100%"}}/>
-                        <h5 style={{fontFamily: `'Montserrat', sans-serif`, marginTop: "5px"}}>Abijith</h5>
-                    </div>
-                </div>
-                <div className="row" style={{textAlign: "center"}}>
-                    <button className="morePeopleBtn" >Other Members</button>
+            <div id="execom" className="container-fluid" style={{ marginTop: "10vh" }}>
+                <hr className="style-one" />
+                <h1 className="execomTextHeading" align="center" style={{ marginBottom: "30px", fontFamily: `'Montserrat', sans-serif`, fontWeight: "500", letterSpacing: "5px" }}>Execom Members</h1>
+                <img src={peopleImg} alt="people" align="right" className="peopleIllustration" />
+                <div className="row" style={{ textAlign: "center", marginTop: "30px" }}>
+                    <button className="morePeopleBtn" onClick={this.handleClick}>Members and Contacts&nbsp;<i style={{ fontSize: "18px" }} class="fa">&#xf061;</i></button>
                 </div>
             </div>
         );

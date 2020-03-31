@@ -1,21 +1,9 @@
-/*@media screen and (min-width: 600px) {*/
-/*    .particleDisplay{*/
-/*    width: 300px;*/
-/*    height: 500px;*/
-/*    top: -100px;*/
-/*    background: rgba(235,235,235,0.38);*/
-/*    transform: rotate(-64.15deg);*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 600px) {*/
-/*    .particleDisplay{*/
-/*       display: none*/
-/*    }*/
-/*}*/
-
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+
+.noNav{
+    display: none;
 }
 
 hr.style-one {
@@ -27,7 +15,7 @@ hr.style-one {
 
 p{
     text-align: justify;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px;
 }
 
@@ -41,15 +29,17 @@ p{
     border-radius: 100%;
 }
 
+.moreGalleryBtn,
 .morePeopleBtn {
     background-color: #ffffff;
     border: indigo solid 2px;
     border-radius: 25px;
     color: #290047;
-    padding: 15px 32px;
+    padding: 10px 32px;
     font-size: 16px;
 }
 
+.moreGalleryBtn:hover,
 .morePeopleBtn:hover{
     color: #EEEEEE;
     background-color: indigo;
@@ -59,54 +49,86 @@ p{
     text-align: center;
 }
 
+.custMenu {
+    text-align: center;
+    color: #1f1f1f;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.custMenu:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 0; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid #FE4365; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.custMenu:hover:after {
+    width: 100%;
+}
+
+.developer{
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.developerDiv{
+    background: #1f1f1f;
+    color: #EEEEEE;
+}
+
 @media screen and (min-width: 600px) {
+    .ieeelogo{
+        margin: 3vh 3vh 3vh 5vw;
+    }
     .gectlogo{
-        margin-left: 15vw;
+        margin-left: 25vw;
         margin-top: 5vh;
         width: 100px;
         height: 100px;
     }
-    .custMenu {
-        text-align: center;
-        color: #1f1f1f;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-    }
-
-    .custMenu:after {
-        content: ""; /* This is necessary for the pseudo element to work. */
-        display: block; /* This will put the pseudo element on its own line. */
-        width: 0; /* Change this to whatever width you want to have before hover. */
-        padding-top: 20px; /* This creates some space between the element and the border. */
-        border-bottom: 5px solid #FE4365; /* This creates the border. Replace black with whatever color you want. */
-        transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
-    }
-
-    .custMenu:hover:after {
-        width: 100%;
-    }
-
-    .aboutText{
-        line-height: 1.5;
+    .ReadmoreAboutDiv{
         text-align: right;
-        margin: 50px;
+        margin-right: 25vw;
+        margin-top: 0vh;
+    }
+    .aboutText{
+        line-height: 1.15;
+        text-align: justify;
+        margin: 100px 0px 50px 45vw;
     }
 
     .aboutIllustration {
         position: absolute;
-        height: 50%;
-        width: 50%;
+        height: 70%;
+        width: 70%;
     }
-    .logoIllustration{
+    /* .logoIllustration{
         width: 150%;
         height: 150%;
         z-index: -1;
         margin-left: -18vw;
         margin-top: -20vh;
+    } */
+    .logoIllustration{
+        width: 110%;
+        height: 100%;
+        z-index: -1;
+        margin-left: 18vw;
+        margin-top: 0vh;
     }
     .counterDiv{
-        margin: 30vh 0 2vh 1vw ;
+        margin: 35vh 0 2vh 1vw ;
+    }
+    .aboutDiv{
+        margin-top: 45vh;
+    }
+    .awardDiv{
+        margin-top: 0vh;
     }
     .peopleIllustration{
         position: absolute;
@@ -137,8 +159,8 @@ p{
         position: absolute;
         height: 50%;
         width: 50%;
-        margin-top: 8vh;
-        margin-left: 45vw;
+        margin-top: 10vh;
+        margin-left: 50vw;
     }
     /*Awards Text Right*/
     .awardsText-tr {
@@ -157,7 +179,7 @@ p{
         z-index: -1;
         width: 40%;
         height: 40%;
-        margin-top: 8vh;
+        margin-top: -4vh;
     }
     .activityContainer{
         margin-top: 10vh;
@@ -165,16 +187,33 @@ p{
     .galleryImage{
         margin: 10px;
     }
+    .sectionHeading{
+        margin: 5vh 0 5vh -10vw;
+    }
+    .moreGalleryBtn{
+        margin-left: 0vw;
+        margin-top: 10vh;
+    }
+    .contactudDiv{
+        margin-top: 25vh;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .ieeelogo{
+        margin: 0vh;
+    }
     .gectlogo{
         margin-left: 70vw;
-        margin-top: 5vh;
+        margin-top: 1vh;
         width: 100px;
         height: 100px;
     }
-    .custMenu{
+    .ReadmoreAboutDiv{
+        text-align: center;
+    }
+    .custMenu.nonhome{
        display: none
     }
     .logoIllustration{
@@ -182,22 +221,26 @@ p{
         height: 150%;
         z-index: -1;
         margin-left: -15vw;
-        margin-top: -30vh;
+        margin-top: -20vh;
     }
     .aboutIllustration {
         position: absolute;
-        height: 50%;
-        width: 50%;
-        margin-top: -16vh;
+        height: 100%;
+        width: 80%;
+        margin-top: -20vh;
+        margin-left: 9vw;
         z-index: -1;
     }
     .aboutText{
         text-align: center;
         line-height: 1.5;
-        margin-top: -16vh;
+        margin-top: 50vh;
     }
     .counterDiv{
-        margin: 30vh 0 2vh 0 ;
+        margin: 10vh 0 2vh 0 ;
+    }
+    .aboutDiv{
+        margin-top: 20vh;
     }
     .peopleIllustration{
         position: absolute;
@@ -227,9 +270,6 @@ p{
         margin-left: 25vw;
         margin-top: 20px;
     }
-    .mobViewExecome{
-        margin-left: auto;
-    }
     /*Awards Text Left*/
     .awardsText-tl.top {
         padding: 10px;
@@ -240,7 +280,7 @@ p{
         position: absolute;
         height: 100%;
         width: 100%;
-        margin: 0 5vw 5vw 5vw;
+        margin: 5vh 5vw 5vw 5vw;
     }
     .awardsText-tl {
         padding: 10px;
@@ -263,14 +303,14 @@ p{
         position: absolute;
         height: 100%;
         width: 100%;
-        margin: 30vh 5vw 5vw 5vw;
+        margin: 50vh 5vw 5vw 5vw;
     }
     .acitivityIllustration{
         position: absolute;
         z-index: -1;
         width: 100%;
         height: 100%;
-        margin-top: -20vh;
+        margin-top: -35vh;
     }
     .activityContainer{
         margin-top: 25vh;
@@ -278,26 +318,54 @@ p{
     .galleryImage{
         margin: 10px;
     }
+    .moreGalleryBtn{
+        margin-left: 0vw;
+        margin-top: 5vh;
+    }
+    .contactudDiv{
+        margin-top: 30vh;
+    }
+    
 }
+@media only screen and (max-width: 600px) {
+    
+    section#timeline:before{
+      background-color: #fff;
+    }
+
+    section#timeline article div.inner h2:after{
+      height: 0px;
+      width:0px;
+    }
+
+    .inner{
+      width: inherit;
+    }
+
+    section#timeline article div.inner span.date{
+      top:0;
+      left:0;
+    }
+    section#timeline article div.inner h2
+    {
+      margin-left: 25px;
+    }
+
+    section#timeline article div.inner{
+      width: inherit;
+    }
+
+  }
 
 
-
-
-
-
-
-
-
+ 
 .right
 {
     float:right !important;
-
 }
-
 .right h2::after{
     left:-5px !important;
 }
-
 section#timeline {
     width: 80%;
     margin: 20px auto;
@@ -358,7 +426,6 @@ section#timeline article div.inner span.date span.day, span.year {
 section#timeline article div.inner span.date span.month {
     font-size: 18px;
 }
-
 section#timeline article div.inner h2 {
     padding: 15px;
     margin: 0;
@@ -379,18 +446,16 @@ section#timeline article div.inner h2:after {
     -webkit-transform: rotate(-45deg);
 }
 section#timeline article div.inner p {
-    padding: 15px;
+    padding: 25px;
     margin: 0;
     font-size: 14px;
     background: #fff;
     color: #656565;
     border-radius: 0 0 6px 6px;
 }
-
 .inner ,h2::after{
     background-color: #5048af;
 }
-
 .imgLink{
     width:50px;
     background-color: #6159e5;
@@ -402,11 +467,46 @@ section#timeline article div.inner p {
 
 
 
+  @media only screen and (max-width: 600px) {
+    .footer{
+      flex-direction: column;
+      font-size: 13px;
+      position: relative !important;
+      align-items: center;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 50vh;
+    }
+    .leftSide,.rightSide{
+      width: inherit !important;
+    }
 
+    section#timeline:before{
+      background-color: #fff;
+    }
 
+    section#timeline article div.inner h2:after{
+      height: 0px;
+      width:0px;
+    }
 
+    .inner{
+      width: inherit;
+    }
 
+    section#timeline article div.inner span.date{
+      top:0;
+      left:20px;
+    }
+    section#timeline article div.inner h2
+    {
+      margin-left: 55px;
+    }
 
+    section#timeline article div.inner{
+      width: inherit;
+    }
 
+  }
 
 

@@ -183,3 +183,35 @@ awardImg.img{
                     </div>
                 </div>
             </div>
+
+
+
+{/* <div className="row mobViewExecome">
+                    <div className="person top pl">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%", marginLeft: "30px" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Vishnu S</h5>
+                        <h6 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }} className="text-muted">Chairman</h6>
+                    </div>
+                    <div className="person pr">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Anna Rose MB</h5>
+                        <h6 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }} className="text-muted">Secretary</h6>
+                    </div>
+                </div> */}
+                {/* <div className="row mobViewExecome" style={{ marginLeft: "0.4vw" }}>
+                    <div className="person pl">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%", marginLeft: "30px" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Ganesh</h5>
+                    </div>
+                    <div className="person pr">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Abijith</h5>
+                    </div>
+                </div> */}
+
+
+
+
+
+
+                
