@@ -16,7 +16,7 @@ class Header extends React.Component {
                 </div>
                 <div className="row">
                     <div className="text-anim m-5">
-                        <h1 style={{ fontFamily: `'Montserrat', sans-serif`, fontWeight: "bold", marginLeft: "5vw" }}>GEC, Thrissur</h1>
+                        <h2 style={{ fontFamily: `'Montserrat', sans-serif`, fontWeight: "bold", marginLeft: "5vw" }}>IEEE Student Branch<br/>Government Engineering College, Thrissur</h2>
                     </div>
                 </div>
             </div>

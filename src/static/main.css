@@ -107,6 +107,12 @@ p{
         height: 70%;
         width: 70%;
     }
+
+    .archStyles {
+        height: 130%;
+        width: 65%;
+        margin: 0px 0px -500px 37vw;
+    }
     /* .logoIllustration{
         width: 150%;
         height: 150%;
@@ -146,7 +152,7 @@ p{
     }
     .morePeopleBtn {
         position: absolute;
-        margin-left: 25vw;
+        margin-left: 42vw;
         margin-top: 20px;
     }
     /*Awards Text Left*/
@@ -212,6 +218,7 @@ p{
     }
     .ReadmoreAboutDiv{
         text-align: center;
+        margin-top: -10vh;
     }
     .custMenu.nonhome{
        display: none
@@ -227,10 +234,19 @@ p{
         position: absolute;
         height: 100%;
         width: 80%;
-        margin-top: -20vh;
+        margin-top: -25vh;
         margin-left: 9vw;
+        z-index: 0;
+    }
+
+    .archStyles {
+        height: 95%;
+        width: 85%;
+        margin-top: 10vh;
+        margin-left: 9vh;
         z-index: -1;
     }
+
     .aboutText{
         text-align: center;
         line-height: 1.5;

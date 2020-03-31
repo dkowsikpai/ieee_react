@@ -1,4 +1,5 @@
 import bioImg from '../static/images/bio.svg';
+import archImg from '../static/images/arch.png'
 import React from "react";
 import ReactModal from "react-modal";
 
@@ -31,8 +32,9 @@ class About extends React.Component {
             <div className="container-fluid aboutDiv">
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                 <img src={bioImg} alt="Bio" className="aboutIllustration" />
-                <h4 className="aboutText">
-                    IEEE Sudent Branch, Government Engineering College, Thrissur.</h4>
+                <img src={archImg} alt = "arch" className="archStyles" />
+                {/*<h4 className="aboutText">
+                    IEEE Sudent Branch, Government Engineering College, Thrissur.</h4> */}
                 <div className="ReadmoreAboutDiv">
                     <button className="moreGalleryBtn" onClick={this.handleOpenModal}>About Us</button>
                 </div>
